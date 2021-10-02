@@ -93,7 +93,7 @@ class TestFileStorage(unittest.TestCase):
                 test_dict[instance_key] = instance
                 self.assertEqual(test_dict, storage._FileStorage__objects)
         FileStorage._FileStorage__objects = save
-
+        
     def test_count(self):
         """test count all"""
         test_len = len(self.all())
